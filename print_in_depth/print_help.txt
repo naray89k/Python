@@ -1,0 +1,27 @@
+Definition:
+-----------
+print(object(s), sep=separator, end=end, file=file, flush=flush)
+
+object(s): 
+----------
+    1-n objects which will be converted to string and printed.
+
+sep:
+----
+    Optional parameter, default is sep=' '.
+    Defines how to separate the objects if there are several of them.
+
+end:
+----
+    Optional parameter, default is end='\n'. 
+    Defines what to print at the end after objects(s)
+
+file:
+-----
+    Optional parameter, default is sys.stdout.
+    An Object with write() method.
+
+flush:
+------
+    Optional parameter, default is False.
+    Output is buffered (False) or flushed (True).

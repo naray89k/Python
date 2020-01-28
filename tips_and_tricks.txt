@@ -1,0 +1,105 @@
+Python Tips and Tricks:
+=======================
+
+1. In-Place Swapping Of Two Numbers. 
+	Snippet:
+		x, y = 10, 20
+		print(x, y) 
+		x, y = y, x 
+		print(x, y)
+
+
+2. Reversing a string in Python 
+	Snippet:
+		a ="GeeksForGeeks"
+		print("Reverse is", a[::-1]) 
+
+
+
+3. Create a single string from all the elements in list
+	Snippet:
+		a = ["Geeks", "For", "Geeks"] 
+		print(" ".join(a)) 
+
+
+4. Chaining Of Comparison Operators.
+	Snippet:
+		n = 10
+		result = 1 < n < 20
+		print(result)
+		result = 1 > n <= 9
+		print(result)
+
+
+5. Print The File Path Of Imported Modules.
+	Snippet:
+		import os;
+		import socket;
+		print(os) 
+		print(socket)
+
+
+6. Use Of Enums In Python.
+	Snippet:
+		class MyName:
+			Geeks, For, Geeks = range(3) 
+		print(MyName.Geeks) 
+		print(MyName.For) 
+		print(MyName.Geeks)
+
+
+7. Return Multiple Values From Functions.
+	Snippet:
+		def x():
+		    return 1, 2, 3, 4
+		a, b, c, d = x()
+		print(a, b, c, d)
+
+
+8. Find The Most Frequent Value In A List.
+	Snippet:
+		test = [1, 2, 3, 4, 2, 2, 3, 1, 4, 4, 4]
+		print(max(set(test), key = test.count))
+
+
+9. Check The Memory Usage Of An Object.
+	Snippet:
+		import sys
+		x = 1
+		print(sys.getsizeof(x))
+
+
+10. Print string N times.
+	Snippet:		
+		n = 2; 
+		a ="GeeksforGeeks"; 
+		print(a * n); 
+
+
+11. Checking if two words are anagrams
+	Snippet:		
+		from collections import Counter 
+		def is_anagram(str1, str2): 
+		     return Counter(str1) == Counter(str2) 
+		print(is_anagram('geek', 'eegk'))		  
+		print(is_anagram('geek', 'peek'))
+
+
+12. Finding the list of functions in python module
+	Snippet:
+		from inspect import getmembers, isfunction
+		import re
+		functions_list = [o[0] for o in getmembers(re) if isfunction(o[1])]
+		print(functions_list)
+
+
+13. Most frequent element in a list.
+    Snippet:
+        a = [1, 2, 3, 1, 2, 3, 2, 2, 4, 5, 1]
+        print(max(set(a), key=a.count))
+    Using Counter from collections
+        cnt = Counter(a)
+        print(cnt.most_common(3))
+
+
+14. 

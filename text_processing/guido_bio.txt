@@ -1,0 +1,25 @@
+Guido van Rossum:
+I am the author of the Python programming language. 
+See also my resume and my publications list, a brief bio, assorted writings, presentations and interviews (all about Python), 
+some pictures of me, my new blog, and my old blog on Artima.com. I am @gvanrossum on Twitter.
+
+I am retired, working on personal projects (and maybe a book). 
+I have worked for Dropbox, Google, Elemental Security, Zope Corporation, BeOpen.com, CNRI, CWI, and SARA. (See my resume.) 
+I created Python while at CWI.
+
+My Name
+
+My name often poses difficulties for Americans.
+
+Pronunciation: in Dutch, the "G" in Guido is a hard G, pronounced roughly like the "ch" in Scottish "loch".
+However, if you're American, you may also pronounce it as the Italian "Guido". 
+I'm not too worried about the associations with mob assassins that some people have. :-)
+
+Spelling: my last name is two words, and I'd like to keep it that way, the spelling on some of my credit cards notwithstanding. 
+Dutch spelling rules dictate that when used in combination with my first name, "van" is not capitalized: "Guido van Rossum". 
+But when my last name is used alone to refer to me, it is capitalized, for example: "As usual, Van Rossum was right."
+
+Alphabetization: in America, I show up in the alphabet under "V". But in Europe, I show up under "R". 
+And some of my friends put me under "G" in their address book...
+
+

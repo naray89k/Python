@@ -1,0 +1,66 @@
+What is slicing ?.
+Slicing means cutting strings into pieces. It is a very powerful method for working with strings in Python.
+
+Example:
+word = 'tacocat'
+subword = word[0:3]  # --> Say Hello! to slicing operator.
+              -----
+#tac
+
+So what does [0:3] do ?.
+It cuts out the substring between 0 and 3.
+The start index is included, end is included.
+
+remember that char on the end index is not included.
+
+syntax:
+string[start:stop]
+
+
+slicing operator cuts out the substring between indices start and stop.
+if you want to start at "the beginning, you dont have to put the 0.
+if you want to till the end, you don't have to put length + 1, Just leave out the index.
+
+Example: 
+subword = word[:]  # --> creates a copy of the string.
+                   # --> Address location of the copy of the string same as  
+# tacocat 
+
+# ===========
+Python - Negative Indices:
+We can use negative indices to count from the end of the string.
+
+word = "tacocat"
+character = word[-3] # ---> Third character counting from the end.
+                          Last character of a string is access with [-1].
+# character = c
+subword = word[-3:]  # ---> From third last to the end.
+# cat
+
+
+# ===========
+string[start:stop:step]
+
+word = "tacocat"
+subword = word[::2]  # ---> From start (0) to end, take every second character!.
+# tcct
+other = word[1::2]   # ---> Starting with the second character, take every second character!.
+# aoa
+
+# ===========
+Negative step width.
+
+And now with negative step width!
+Now you can cut out any string from a given string!.
+
+word = "taco"       
+subword = word[::-1] # ---> want to reverse a string ?. Do it like this!.
+# ocat
+
+other = word[::-2]
+# oa.
+
+
+# What does this code do ?. Polyndrome check.
+word = "tacocat"
+return word == word[::-1]
