@@ -20,7 +20,7 @@ a.items() & b.items()
 
 c = {key:a[key] for key in a.keys() - {'z','w'}}
 
-print c
+print(c)
 
 # Python 2 code
 a = {
@@ -41,8 +41,8 @@ for i in a.keys():
     for j in b.keys():
         if i in j:
             c.add(i)
-print c
-print set(a.keys())-c
+print(c)
+print(set(a.keys())-c)
 print (list(set(a.keys()) - c)+list(set(b.keys())-c))
 
 d = {}
@@ -56,7 +56,7 @@ e = {}
 for i,j in a.items():
     if i != 'z' and i != 'w':
         e[i] = j
-print e
+print(e)
 
 
 

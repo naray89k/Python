@@ -28,9 +28,9 @@ name = record[0]
 email = record[1]
 phone_numbers = record[-2:]
 
-print name
-print email
-print phone_numbers
+print(name)
+print(email)
+print(phone_numbers)
 
 #Python 3 code
 
@@ -99,9 +99,9 @@ sh
 line = 'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false'
 
 list1 = line.split(':')
-print list1[0]
-print list1[-2]
-print list1[-1]
+print(list1[0])
+print(list1[-2])
+print(list1[-1])
 
 #Python 3
 
@@ -116,8 +116,8 @@ record = ('ACME', 50, 123.45, (12,18,2012))
 name = record[0]
 year = record[-1][-1]
 
-print name
-print year
+print(name)
+print(year)
 
 #Python 3 
 
@@ -142,7 +142,7 @@ tail
 p = 0
 for i in tail:
     p+=i
-print head+p
+print(head+p)
 
 
 

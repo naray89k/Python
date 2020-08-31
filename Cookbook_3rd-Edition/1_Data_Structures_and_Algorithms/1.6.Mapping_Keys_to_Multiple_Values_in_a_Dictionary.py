@@ -28,7 +28,7 @@ d['a'].append(3)
 d['b'].append(4)
 d['b'].append(5)
 
-print d
+print(d)
 
 d = {}
 d.setdefault('a',[]).append(1)
@@ -37,7 +37,7 @@ d.setdefault('a',[]).append(3)
 d.setdefault('b',[]).append(4)
 d.setdefault('b',[]).append(5)
 
-print d
+print(d)
 
 d = {}
 
@@ -47,12 +47,12 @@ for key,value in pairs.items():
         d[key] = []
     d[key].append(value)
     
-print d
+print(d)
 
 d = {}
 for key, value in pairs.items():
     d.setdefault(key,[]).append(value)
-print d
+print(d)
 
 
 

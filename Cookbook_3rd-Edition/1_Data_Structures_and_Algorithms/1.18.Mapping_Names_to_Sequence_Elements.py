@@ -48,7 +48,7 @@ Stock = namedtuple('Stock',['name','shares','price','date','time'])
 
 stock_prototype = Stock('',0,0.0,None,None)
 
-print stock_prototype
+print(stock_prototype)
 
 #Python 3
 def dict_to_stock(s):

@@ -8,7 +8,7 @@ def dedupe(items):
             seen.add(item)
 a = [1,5,2,1,9,1,5,10]
 
-print list(dedupe(a))
+print(list(dedupe(a))
 
 a = [1,5,2,1,9,1,5,10]
 b = []
@@ -17,7 +17,7 @@ for i in a:
         pass
     else:
         b.append(i)
-print b
+print(b)
 
 def dedupe(items, key=None):
     seen = set()
@@ -37,7 +37,7 @@ for i in a:
         pass
     else:
         b.append(i)
-print b
+print(b)
 
 a = [1,5,2,1,9,1,5,10]
 set(a)

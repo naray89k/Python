@@ -4,8 +4,8 @@ import heapq
 
 nums = [1,8,2,23,7,-4,18,23,42,37,2]
 
-print heapq.nlargest(len(nums),nums)
-print heapq.nsmallest(len(nums),nums)
+print(heapq.nlargest(len(nums),nums)
+print(heapq.nsmallest(len(nums),nums)
 
 portfolio = [
      {'name': 'IBM', 'shares': 100, 'price': 91.1},
@@ -19,8 +19,8 @@ portfolio = [
 cheap = heapq.nsmallest(len(portfolio), portfolio, key=lambda k: k['price'])
 expensive = heapq.nlargest(len(portfolio), portfolio, key=lambda k: k['price'])
 
-print cheap
-print expensive
+print(cheap)
+print(expensive)
 
 nums = [1,8,2,23,7,-4,18,23,42,37,2]
 

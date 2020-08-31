@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 mylist = [1,4,-5,10,-7,2,3,-1]
-print [n for n in mylist if n>0]
-print [n for n in mylist if n<0]
+print([n for n in mylist if n>0])
+print([n for n in mylist if n<0])
 
 pos = (n for n in mylist if n > 0)
-print pos
+print(pos)
 for i in pos:
     print i
 
 neg = (n for n in mylist if n < 0)
-print neg
+print(neg)
 for i in neg:
     print i
 
@@ -24,7 +24,7 @@ def is_int(val):
         return False
 
 ivals = list(filter(is_int,values))
-print ivals
+print(ivals)
 
 values = ['1','2','-3','-','4','N/A','5']
 integers = []

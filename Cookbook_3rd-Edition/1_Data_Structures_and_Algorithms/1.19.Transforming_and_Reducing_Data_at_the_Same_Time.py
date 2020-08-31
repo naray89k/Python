@@ -13,7 +13,7 @@ else:
     print 'Sorry, no python.'
 
 s = ('ACME', 50,123.45)
-print ','.join(str(x) for x in s)
+print(','.join(str(x) for x in s)
 
 portfolio= [
  {'name':'GOOG', 'shares': 50},
@@ -26,11 +26,11 @@ min_shares
 
 s = sum(x**2 for x in nums)
 
-print s
+print(s)
 
 min_shares = min(portfolio, key = lambda s:s['shares'])
 
-print min_shares
+print(min_shares)
 
 
 

@@ -12,8 +12,8 @@ from operator import itemgetter
 rows_by_fname= sorted(rows, key=itemgetter('fname'))
 rows_by_uid = sorted(rows, key=itemgetter('uid'))
 
-print rows_by_fname
-print rows_by_uid
+print(rows_by_fname)
+print(rows_by_uid)
 
 rows_lfname = sorted(rows,key=itemgetter('lname','fname'))
 
@@ -24,11 +24,11 @@ print (rows_lfname)
 rows_by_fname= sorted(rows,key = lambda k: k['fname'])
 rows_by_lname = sorted(rows,key = lambda p: p['lname'])
 
-print rows_by_fname
-print rows_by_lname
+print(rows_by_fname)
+print(rows_by_lname)
 
-print min(rows,key=itemgetter('uid'))
-print max(rows, key=itemgetter('uid'))
+print(min(rows,key=itemgetter('uid'))
+print(max(rows, key=itemgetter('uid'))
 
 
 

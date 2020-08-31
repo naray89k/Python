@@ -14,7 +14,7 @@ rows = [
 from operator import itemgetter
 from itertools import groupby
 
-print sorted(rows,key=itemgetter('date'))
+print(sorted(rows,key=itemgetter('date'))
 
 for date,items in groupby(rows,key=itemgetter('date')):
     print(date)
@@ -26,7 +26,7 @@ rows_by_date = defaultdict(list)
 for row in rows:
     rows_by_date[row['date']].append(row)
     
-print rows_by_date
+print(rows_by_date)
 
 for i in rows_by_date['07/01/2012']:
     print i
