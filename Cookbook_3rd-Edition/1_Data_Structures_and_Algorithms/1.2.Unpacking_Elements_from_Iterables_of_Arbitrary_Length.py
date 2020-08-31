@@ -33,7 +33,7 @@ print(email)
 print(phone_numbers)
 
 #Python 3 code
-
+sales_record = [10,8,7,1,9,5,10,3]
 *trailing_qtrs, current_qtr = sales_record
 trailing_avg = sum(trailing_qtrs)/len(trailing_qtrs)
 return avg_comparison(trailing_avg,current_qtr)

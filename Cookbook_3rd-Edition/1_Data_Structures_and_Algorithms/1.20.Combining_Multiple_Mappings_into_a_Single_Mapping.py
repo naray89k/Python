@@ -1,21 +1,24 @@
 #!/usr/bin/env python
 # coding: utf-8
-#Python 3
-a = {'x':1, 'z':3}
-b = {'y':2, 'z':4}
+# Python 3
+a = {'x': 1, 'z': 3}
+b = {'y': 2, 'z': 4}
 
 from collections import ChainMap
-c = ChainMap(a,b)
+
+c = ChainMap(a, b)
 print(c['x'])
 print(c['y'])
 print(c['z'])
 
 import sys
+
 get_ipython().system('{sys.executable} -m pip install chainmap')
 
-#Python 2 NB::you might need to install chainmap module
+# Python 2 NB::you might need to install chainmap module
 from chainmap import ChainMap
-c = ChainMap(a,b)
+
+c = ChainMap(a, b)
 print(c['x'])
 print(c['y'])
 print(c['z'])
@@ -54,8 +57,8 @@ values['x']
 
 values
 
-a = {'x':1, 'z':3}
-b = {'y':2, 'z':4}
+a = {'x': 1, 'z': 3}
+b = {'y': 2, 'z': 4}
 merged = dict(b)
 merged.update(a)
 merged
@@ -69,13 +72,10 @@ merged['z']
 a['x'] = 13
 merged['x']
 
-a = {'x':1,'z':3}
-b = {'y':2,'z':4}
-merged = ChainMap(a,b)
+a = {'x': 1, 'z': 3}
+b = {'y': 2, 'z': 4}
+merged = ChainMap(a, b)
 merged['x']
 
 a['x'] = 42
 merged['x']
-
-
-

@@ -19,7 +19,7 @@ e['grok'] = 4
 print(e)
 
 for key, value in d.items():
-    print key, value
+    print(key, value)
 
 import json
 json.dumps(d)

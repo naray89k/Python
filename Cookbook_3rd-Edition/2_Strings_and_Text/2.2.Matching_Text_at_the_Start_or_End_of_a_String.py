@@ -38,7 +38,7 @@ url[:5] == 'http:' or url[:6] == 'https:' or url[:4]=='ftp:'
 
 import re
 url = 'http://www.python.org'
-print bool(re.match('http:|https:|ftp:', url))
+print(bool(re.match('http:|https:|ftp:', url)))
 
 
 
