@@ -8,7 +8,7 @@ def search(lines, pattern, history=5):
         if pattern in line:
             yield line, previous_lines
         previous_lines.append(line)
-        
+
 if __name__ == '__main__':
     with open('somefile.txt') as f:
         for line, prevlines in search(f, 'python', 5):
