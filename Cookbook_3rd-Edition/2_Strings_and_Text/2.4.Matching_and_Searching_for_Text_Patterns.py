@@ -20,7 +20,7 @@ if re.match(r'\d+/\d+/\d+', text1):
 else:
     print('no')
 
-if re.match(r'\d+/\d+/\d+',text2):
+if re.match(r'\d+/\d+/\d+', text2):
     print('yes')
 else:
     print('no')
@@ -59,8 +59,8 @@ text
 
 datepat.findall(text)
 
-for month,day,year in datepat.findall(text):
-    print('{}-{}-{}'.format(year,month,day))
+for month, day, year in datepat.findall(text):
+    print('{}-{}-{}'.format(year, month, day))
 
 for m in datepat.finditer(text):
     print(m.groups())
@@ -74,7 +74,4 @@ datepat = re.compile(r'(\d+)/(\d+)/(\d+)$')
 datepat.match('11/27/2012abcdef')
 datepat.match('11/27/2012')
 
-re.findall(r'(\d+)/(\d+)/(\d+)',text)
-
-
-
+re.findall(r'(\d+)/(\d+)/(\d+)', text)

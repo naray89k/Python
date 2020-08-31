@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-import re 
+import re
 
 comment = re.compile(r'/\*(.*?)\*/')
 text1 = '/* this is a comment */'
@@ -15,8 +15,5 @@ comment.findall(text2)
 comment = re.compile(r'/\*((?:.|\n)*?)\*/')
 comment.findall(text2)
 
-comment = re.compile(r'/\*(.*?)\*/',re.DOTALL)
+comment = re.compile(r'/\*(.*?)\*/', re.DOTALL)
 comment.findall(text2)
-
-
-

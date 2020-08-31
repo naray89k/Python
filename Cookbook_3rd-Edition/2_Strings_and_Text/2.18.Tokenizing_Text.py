@@ -56,7 +56,7 @@ text = 'foo = 42'
 tokens = (tok for tok in generate_tokens(master_pat, text) if tok.type != 'WS')
 
 for tok in tokens:
-    print tok
+    print(tok
 
 LT = r'(?P<LT><)'
 LE = r'(?P<LE><=)'

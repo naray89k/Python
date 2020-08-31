@@ -26,4 +26,5 @@ re.sub('\s+', ' ', s)
 with open(filename) as f:
     lines = (line.strip() for line in f)
     for line in lines:
+        line.strip()
 

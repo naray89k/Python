@@ -11,9 +11,9 @@ a = 'Is Chicago'
 b = 'Not Chicagoo?'
 a + ' ' + b
 
-print('{}{}'.format(a,b))
+print('{}{}'.format(a, b))
 
-print(a+' '+b)
+print(a + ' ' + b)
 
 a = 'Hello' 'World'
 a
@@ -26,16 +26,18 @@ s
 data = ['ACME', 50, 91.1]
 ','.join(str(d) for d in data)
 
-print(a+':'+b+':'+c)
-print(':'.join([a,b,c]))
-print(a,b,c, sep=':')
+print(a + ':' + b + ':' + c)
+print(':'.join([a, b, c]))
+print(a, b, c, sep=':')
 
 from __future__ import print_function
-print('Abac','Adndkg', sep=' ')
+
+print('Abac', 'Adndkg', sep=' ')
 
 f.write(chunk1 + chunk2)
 f.write(chunk1)
 f.write(chunk2)
+
 
 def sample():
     yield 'Is'
@@ -43,10 +45,12 @@ def sample():
     yield 'Not'
     yield 'Chicago?'
 
+
 text = ''.join(sample())
 
 for part in sample():
     f.write(part)
+
 
 def combine(source, maxsize):
     parts = []
@@ -59,9 +63,7 @@ def combine(source, maxsize):
             parts = []
             size = 0
     yield ''.join(parts)
-    
+
+
 for part in combine(sample(), 32768):
     f.write(part)
-
-
-

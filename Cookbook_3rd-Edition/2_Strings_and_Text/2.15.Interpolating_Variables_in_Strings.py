@@ -31,11 +31,11 @@ def sub(text):
 
 name = 'Guido'
 n = 37
-print sub('Hello {name}')
+print(sub('Hello {name}')
 
-print sub('You have {n} messages.')
+print(sub('You have {n} messages.')
 
-print sub('Your favorite color is {color}')
+print(sub('Your favorite color is {color}')
 
 name = 'Guido'
 n = 37

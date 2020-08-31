@@ -25,13 +25,13 @@ import re
 re.split('[:,]',data)
 
 a = 'Hello World' # Text string
-print a[0]
-print a[1]
+print(a[0])
+print(a[1])
 
 b = b'Hello World' 
 
-print b[0]
-print b[1]
+print(b[0])
+print(b[1])
 
 s = b'Hello World'
 print(s)
