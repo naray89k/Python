@@ -8,6 +8,7 @@ with open('somefile.txt', 'rt') as f:
 # Iterate over the lines of the file
 with open('somefile.txt', 'rt') as f:
     for line in f:
+        pass
  # process line
 
 # Write chunks of text data

@@ -5,6 +5,7 @@
 # NB: This Jupyter Notebook uses Python 2 and so the Python 3 code is also adapted to Python 2 and the Python 3 code poses synax errors.
 #First example if you need to find the average of the middle grades 
 #Python 3 code
+
 def drop_first_last(grades):
     first, *middle, last = grades
     return avg(middle)
@@ -65,7 +66,7 @@ for tag, *args in records:
     if tag == 'foo':
         do_foo(*args)
     elif tag == 'bar':
-        do_bar(*args)|
+        do_bar(*args)
 
 #Python 2
 records = [

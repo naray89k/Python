@@ -63,4 +63,11 @@ class Rectangle:
 
 
 
-print(5 + 10)
+if __name__ == "__main__":
+    rectangle1 = Rectangle(10,10)
+    rectangle2 = Rectangle(10,10)
+    rectangle3 = Rectangle(15,10)
+    print(rectangle1 == rectangle2)
+    print(rectangle3 > rectangle2)
+    print(rectangle1 > rectangle3)
+#print(5 + 10)

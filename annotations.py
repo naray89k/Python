@@ -1,7 +1,8 @@
 #! /usr/bin/env python3
 import re
 
-def power_func(a:int, b:int = 2) -> "a to the power of b":
+
+def power_func(a: int, b: int = 2) -> "a to the power of b":
     """Short summary.
 
     Parameters
