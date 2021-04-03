@@ -1,0 +1,13 @@
+Closure_Applications_1.ipynb
+Closure_Applications_2.ipynb
+Closures.ipynb
+Decorator_Application_(Decorating_Classes).ipynb
+Decorator_Application_(Decorator_Class).ipynb
+Decorator_Application_(Logger,_Stacked).ipynb
+Decorator_Application_(Memoization).ipynb
+Decorator_Application_(Single_Dispatch_Generic_Functions).ipynb
+Decorator_Application_(Timer).ipynb
+Decorators_1.ipynb
+Decorators_2.ipynb
+Global_and_Local_Scopes.ipynb
+Nonlocal_Scopes.ipynb

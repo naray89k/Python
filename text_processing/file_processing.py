@@ -33,6 +33,6 @@ with open('oceans.txt', 'w') as fw_obj:
 
 with open('oceans.txt', 'a') as fw_obj:
     print("="*25, file=fw_obj)
-    print("These are the five oceans in the world",file=fw_obj)
+    print("These are the five oceans in the world", file=fw_obj)
 
 #------- end --------

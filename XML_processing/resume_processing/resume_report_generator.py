@@ -7,9 +7,9 @@ import xml.dom.minidom as mnDom
 from lxml.html import builder as E
 import csv
 
-xml_file="resume.xml"
+xml_file = "resume.xml"
 tree = ET.parse(xml_file)
-table_header = ['S.No','CLIENT','START_DATE','END_DATE','ROLE','TYPE','LOCATION']
+table_header = ['S.No', 'CLIENT', 'START_DATE', 'END_DATE', 'ROLE', 'TYPE', 'LOCATION']
 table_data = []
 
 with open('project_assignments.csv', 'w') as csvfile:
@@ -32,23 +32,23 @@ with open('project_assignments.csv', 'w') as csvfile:
 
 # HTML TAG CREATION:
 root_elem = html_tree.Element('html')
-hdElem = html_tree.SubElement(root_elem,'head')
-html_tree.SubElement(hdElem,'h2').text="List of Job Assignments"
-body_elem = html_tree.SubElement(root_elem,'body')
+hdElem = html_tree.SubElement(root_elem, 'head')
+html_tree.SubElement(hdElem, 'h2').text = "List of Job Assignments"
+body_elem = html_tree.SubElement(root_elem, 'body')
 
-table_elem = html_tree.SubElement(body_elem,'table',border='1')
-table_row_elem = html_tree.SubElement(table_elem,'tr')
+table_elem = html_tree.SubElement(body_elem, 'table', border='1')
+table_row_elem = html_tree.SubElement(table_elem, 'tr')
 for th in table_header:
-    html_tree.SubElement(table_row_elem,'th').text=th
+    html_tree.SubElement(table_row_elem, 'th').text = th
 
 for row in table_data:
-    table_row_elem = html_tree.SubElement(table_elem,'tr')
+    table_row_elem = html_tree.SubElement(table_elem, 'tr')
     for col in row:
-        html_tree.SubElement(table_row_elem,'td').text=str(col)
+        html_tree.SubElement(table_row_elem, 'td').text = str(col)
 
 rough_string = html_tree.tostring(root_elem)
 reparsed = mnDom.parseString(rough_string)
 filename = "project_assignments.html"
-FILE = open(filename,"w")
+FILE = open(filename, "w")
 FILE.writelines(reparsed.toprettyxml(indent="\t"))
 FILE.close()
