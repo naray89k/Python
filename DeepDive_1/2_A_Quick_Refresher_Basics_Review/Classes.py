@@ -13,7 +13,6 @@ class Rectangle:
             raise ValueError('Width must be positive.')
         self._width = width
 
-
     @property
     def height(self):
         return self._height
@@ -24,22 +23,17 @@ class Rectangle:
             raise ValueError('Height must be positive.')
         self._height = height
 
-
     def area(self):
         return self.width * self.height
-
 
     def perimeter(self):
         return 2 * (self.width + self.height)
 
-
     def __str__(self):
         return 'Rectangle (width={0}, height={1})'.format(self.width, self.height)
 
-
     def __repr__(self):
         return 'Rectangle({0}, {1})'.format(self.width, self.height)
-
 
     def __eq__(self, other):
         if isinstance(other, Rectangle):
@@ -47,20 +41,17 @@ class Rectangle:
         else:
             return False
 
-
     def __lt__(self, other):
         if isinstance(other, Rectangle):
             return self.area() < other.area()
         else:
             return NotImplemented
 
-
     def __gt__(self, other):
         if isinstance(other, Rectangle):
             return self.area() > other.area()
         else:
             return NotImplemented
-
 
 
 print(5 + 10)
